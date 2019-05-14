@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C8EE7585-E158-4EEF-8FBC-90B7D23CB6DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Lionscricket.My.MyApplication</StartupObject>
+    <RootNamespace>Lionscricket</RootNamespace>
+    <AssemblyName>Lionscricket</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Lionscricket.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Lionscricket.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmTSF.Designer.vb">
+      <DependentUpon>frmTSF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTSF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Matchcreation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Matchcreation.Designer.vb">
+      <DependentUpon>Matchcreation.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Playearreg.Designer.vb">
+      <DependentUpon>Playearreg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Playearreg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Searchplayear.Designer.vb">
+      <DependentUpon>Searchplayear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Searchplayear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Searchcoach.Designer.vb">
+      <DependentUpon>Searchcoach.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Searchcoach.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coachreg.Designer.vb">
+      <DependentUpon>Coachreg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Coachreg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLog.Designer.vb">
+      <DependentUpon>frmLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lions_Cricket_Club.Designer.vb">
+      <DependentUpon>Lions_Cricket_Club.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Lions_Cricket_Club.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmTSF.resx">
+      <DependentUpon>frmTSF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matchcreation.resx">
+      <DependentUpon>Matchcreation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Playearreg.resx">
+      <DependentUpon>Playearreg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Searchplayear.resx">
+      <DependentUpon>Searchplayear.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Searchcoach.resx">
+      <DependentUpon>Searchcoach.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coachreg.resx">
+      <DependentUpon>Coachreg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLog.resx">
+      <DependentUpon>frmLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lions_Cricket_Club.resx">
+      <DependentUpon>Lions_Cricket_Club.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\add_male_user_98364\Add_Male_User_Icon_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\add_male_user_98364\Add_Male_User_Icon_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\search_male_user_98408\Search_Male_User_Icon_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\edit_male_user_98373\Edit_Male_User_Icon_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\free_folder_icons_icons_pack_120784\folder_documents_512.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\save_4095\httpzcoolcomcnpicpngnew_png_65012png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\save_97255\Save_Icon_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\save_97255\Save_Icon_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\remove_male_user_98400\Remove_Male_User_Icon_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\loading_animated_gif_icons_pack_120901\loading\21.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
